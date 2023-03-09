@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: deviceregistrysvcapp-orrt
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:mx1ZX-deviceregistrysvcapp-orrt
+      - image: quay.io/redhat-appstudio/user-workload@sha256:bb7d52ac1fa3826b61bcffa26ed83cfb73f834b9c3b9271af80ba13529b5dd95
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
