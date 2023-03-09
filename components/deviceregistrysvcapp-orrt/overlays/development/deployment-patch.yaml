@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: deviceregistrysvcapp-orrt
+  namespace: susdas-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:bb7d52ac1fa3826b61bcffa26ed83cfb73f834b9c3b9271af80ba13529b5dd95
+        name: container-image
+        resources: {}
+status: {}
